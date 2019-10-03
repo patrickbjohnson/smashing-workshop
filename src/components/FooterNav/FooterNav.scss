@@ -7,9 +7,14 @@
 /**
  * 1) Navigation within the footer
  */
-.c-footer-nav {
+.c-footer-nav__list {
+    display: flex;
+}
+
+.c-footer-nav__item {
+    margin-right: 2rem;
 }
 
 .c-footer-nav__link {
-	color: $color-neutral-white;
+    color: $color-neutral-white;
 }
