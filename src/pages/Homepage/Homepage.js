@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import PropTypes from "prop-types";
+import React, { Component } from "react";
 import { Header } from "../../components/Header/Header";
 import { Hero } from "../../components/Hero/Hero";
 import { Section } from "../../components/Section/Section";

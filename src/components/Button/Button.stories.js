@@ -1,26 +1,26 @@
-import React, { PropTypes } from "react";
-import { storiesOf } from "@storybook/react";
+import React, { PropTypes } from 'react';
+import { storiesOf } from '@storybook/react';
 
-import { withKnobs } from "@storybook/addon-knobs";
-import { withSmartKnobs } from "storybook-addon-smart-knobs";
-import { Button } from "./Button";
+import { withKnobs } from '@storybook/addon-knobs';
 
-let stories = storiesOf("Molecules/Buttons/Button", module);
+import { Button } from './Button';
 
-stories.addDecorator(withSmartKnobs).addDecorator(withKnobs);
+let stories = storiesOf('Molecules/Buttons/Button', module);
 
-stories.add("Default", () => (
-	<Button onClick={() => console.log("clicked!!")} />
+stories.addDecorator(withKnobs);
+
+stories.add('Default', () => (
+  <Button onClick={() => console.log('clicked!!')} />
 ));
 
-stories.add("Secondary", () => <Button issecondary text="Secondary Button" />);
+stories.add('Secondary', () => <Button issecondary text='Secondary Button' />);
 
-stories.add("Icon Before", () => (
-	<Button iconname="plus" text={"Icon Before"} />
+stories.add('Icon Before', () => (
+  <Button iconname='plus' text={'Icon Before'} />
 ));
 
-stories.add("Icon After", () => (
-	<Button iconnameafter="minus" text="Icon After" />
+stories.add('Icon After', () => (
+  <Button iconnameafter='minus' text='Icon After' />
 ));
 
-stories.add("Icon Only", () => <Button iconname="minus" text={false} />);
+stories.add('Icon Only', () => <Button iconname='minus' text={false} />);

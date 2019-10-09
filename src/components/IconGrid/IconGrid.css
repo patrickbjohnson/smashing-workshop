@@ -1,24 +1,23 @@
 .icon-grid {
-	display: flex;
-}
-
-.icon-grid svg {
-	height: 16px;
-	width: 16px;
-	margin: 0 auto 1rem auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
 }
 
 .icon-grid__item {
-	width: 5.5rem;
-	height: 5.5rem;
-	background: #f5f5f5;
-	border: 1px solid #cccccd;
-	padding: 0.5rem;
-	margin: 0 1rem 1rem 0;
-	text-align: center;
+  height: 5rem;
+  border: 1px solid #cccccd;
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .icon-grid__text {
-	display: block;
-	font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: block;
+  font-size: 0.65rem;
 }

@@ -1,12 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
-import { withSmartKnobs } from "storybook-addon-smart-knobs";
+
 import { TextPassage } from "./TextPassage";
 
 let stories = storiesOf("Organisms/Text/TextPassage", module);
 
-stories.addDecorator(withSmartKnobs).addDecorator(withKnobs);
+stories.addDecorator(withKnobs);
 
 stories.add("Default", () => (
 	<TextPassage>
@@ -43,7 +43,7 @@ stories.add("Default", () => (
 		</ol>
 
 		<p>
-			<a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipiscing
+			<a href="#awef">Lorem ipsum dolor sit amet</a>, consectetur adipiscing
 			elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 			laboris nisi ut aliquip ex ea commodo consequat.

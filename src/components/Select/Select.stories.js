@@ -1,11 +1,11 @@
 import React, { PropTypes } from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
-import { withSmartKnobs } from "storybook-addon-smart-knobs";
+
 import { Select } from "./Select";
 
 let stories = storiesOf("Atoms/Forms/Select", module);
-stories.addDecorator(withSmartKnobs).addDecorator(withKnobs);
+stories.addDecorator(withKnobs);
 
 stories.add("Default", () => (
 	<Select
