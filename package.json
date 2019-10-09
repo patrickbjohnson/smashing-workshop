@@ -13,7 +13,8 @@
     "dist": "cross-env BABEL_ENV=distribution run-s dist.clear dist.build dist.clean",
     "dist.clear": "del-cli dist",
     "dist.build": "npm-run-all --parallel build:css build:icons build:js",
-    "dist.clean": "del-cli dist/**/*.stories.js dist/components/**/*.scss"
+    "dist.clean": "del-cli dist/**/*.stories.js dist/components/**/*.scss",
+    "plop": "plop component"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -43,6 +44,7 @@
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^5.2.0",
+    "plop": "^2.4.0",
     "postcss-cli": "^6.1.2",
     "prettier": "^1.17.1",
     "sass-loader": "^8.0.0",
