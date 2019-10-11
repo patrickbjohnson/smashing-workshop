@@ -31,6 +31,33 @@ module.exports = plop => {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/index.js',
         templateFile: 'plop-templates/Component/index.js.hbs'
+      },
+      {
+        type: 'append',
+        pattern: /;\n$/,
+        separator: '',
+        path: 'src/index.js',
+        template: "export { default as {{pascalCase name}} } from './components/{{pascalCase name}}';",
+      },
+      function sortIndex() {
+        process.chdir(plop.getPlopfilePath());
+
+        const fs = require('fs');
+        const indexFile = `${plop.getDestBasePath()}/src/index.js`;
+
+        if (fs.existsSync(indexFile)) {
+          const nameRegex = /default as ([^\s]*)/
+          const sorted = fs.readFileSync(indexFile, "utf8")
+            .split(';\n')
+            .sort((a, b) => {
+              const aName = a.match(nameRegex)[1]
+              const bName = b.match(nameRegex)[1]
+              return aName.localeCompare(bName)
+            })
+            .join(';\n');
+          fs.writeFileSync(indexFile, sorted + ';\n');
+          return `/src/index.js lines sorted`
+        }
       }
     ]
   });
