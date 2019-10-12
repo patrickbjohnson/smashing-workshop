@@ -12,18 +12,25 @@ To get started, type the following commands into the terminal:
 
 ## Building components
 
-Start building in the `src/components` folder with this folder structure:
+Components live in `src/components`, and the easiest way to add a new component by running [plop](https://plopjs.com/) in the command line:
+
+```
+npm run plop
+```
+
+Choose a name for your new component in the terminal, and plop will generate the new component structure, which looks like this:
 
 ```
 - ComponentName
   - ComponentName.js
   - ComponentName.scss
   - ComponentName.stories.js
+  - index.js
 ```
 
-For instance, create `src/components/Button` and add `Button.scss`, `Button.js` and `Button.stories.js`
+For example, the `Button` component will add `Button.js`, `Button.stories.js`, `Button.scss`, and `index.js`.
 
-**Button.js** will be something along the lines of:
+**Button.js** could look something like:
 
 ```js
 import React, { Component } from 'react';
