@@ -32,10 +32,6 @@ export class Tokens extends Component {
                 <Section title="Font Sizes">
                     <FontSizes />
                 </Section>
-
-                <Section title="Borders">TODO</Section>
-
-                <Section title="Spacing">TODO</Section>
             </React.Fragment>
         );
     }
