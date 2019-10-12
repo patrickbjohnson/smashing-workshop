@@ -10,6 +10,7 @@
   --pl-grid-gap: 1rem;
   --pl-color-fpo: #69b3e7;
   --pl-color-fpo-light: #edf6fc;
+  --pl-color-fpo-light-slightly-darker: #d1eafc;
 }
 
 .sg-colors {
@@ -50,4 +51,12 @@
   font-weight: bold;
   text-align: center;
   color: var(--pl-color-fpo);
+}
+
+.fpo .fpo {
+  background: var(--pl-color-fpo-light-slightly-darker);
+}
+
+.fpo .fpo:last-of-type {
+  margin-bottom: 0;
 }

@@ -16,6 +16,9 @@ stories.add('Default', () => (
     <div className='fpo'>
       This is the section body, where you can put any content or include other
       components.
+      <div className='fpo'>Subcomponent</div>
+      <div className='fpo'>Subcomponent</div>
+      <div className='fpo'>Subcomponent</div>
     </div>
   </Section>
 ));
