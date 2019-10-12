@@ -1,3 +1,17 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+
+:root {
+  --pl-border-color: #dddddd;
+  --pl-border-radius: 8px;
+  --pl-grid-gap: 1rem;
+  --pl-color-fpo: #69b3e7;
+  --pl-color-fpo-light: #edf6fc;
+}
+
 .sg-colors {
   display: grid;
   grid-gap: 1rem;
@@ -20,4 +34,20 @@
   height: 4em;
   margin-bottom: 0.3em;
   border-radius: 5px;
+}
+
+/**
+* For placeholder only block
+* 1) Used for placeholder blocks for layouts
+*/
+.fpo {
+  background: var(--pl-color-fpo-light);
+  border: 1px dashed var(--pl-color-fpo);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--pl-color-fpo);
 }
