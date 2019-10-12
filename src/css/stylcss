@@ -336,7 +336,7 @@ button {
 /**
  * Main element
  */
-[role=main] {
+main {
   display: block;
   padding: 1rem; }
 
