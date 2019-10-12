@@ -1,5 +1,5 @@
 import { addParameters, configure, addDecorator } from '@storybook/react';
-import unitedTheme from './unitedTheme';
+import atomicTheme from './atomicTheme';
 import '../src/css/style.scss';
 
 const req = require.context('../src', true, /.stories.js$/);
@@ -9,7 +9,7 @@ function loadStories() {
 
 addParameters({
   options: {
-    theme: unitedTheme
+    theme: atomicTheme
   }
 });
 
