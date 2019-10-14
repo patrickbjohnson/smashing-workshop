@@ -7,25 +7,20 @@ import { CardList } from '../../components/CardList/CardList';
 import { TextPassage } from '../../components/TextPassage/TextPassage';
 import { Footer } from '../../components/Footer/Footer';
 
+import ResultsList from '../../components/ResultsList'
+import ValueProp from '../../components/ValueProp'
+
 export class Homepage extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
-
         <main role='main'>
-          <Hero
-            title={this.props.heroTitle}
-            description={this.props.heroDescription}
-            imgsrc={this.props.heroImgSrc}
-            imgalt={this.props.heroImgAlt}
-          />
-          <Section
-            title={this.props.section1Title}
-            description={this.props.section1Description}
-          >
-            <CardList cardListItems={this.props.cardListItems} />
-          </Section>
+          <ValueProp />
+          <div style={{
+            'background': '#f7f7f7'
+          }}>
+            <ResultsList />  
+          </div>
         </main>
         <Footer />
       </React.Fragment>

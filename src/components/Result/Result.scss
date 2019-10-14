@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    #RESULT
+\*------------------------------------*/
+
+/**
+ * 1) 
+ */
+ .c-result {
+    position: relative;
+    padding: 25px;
+    border-bottom: 1px solid;
+}
+
+.c-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.c-org {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.c-link {
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.c-link:hover {
+    color: black;
+}
+
+.c-amount {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desc {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.favorite {
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

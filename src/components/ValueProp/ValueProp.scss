@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #VALUE PROP
+\*------------------------------------*/
+
+/**
+ * 1) 
+ */
+ .c-value-prop {
+    height: 50vh;
+    background-color: #edf6f8;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-inner {
+    position: relative;
+    text-align: center;
+}
+
+.c-inner h1 {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.c-inner p {
+    font-size: 20px;
+}

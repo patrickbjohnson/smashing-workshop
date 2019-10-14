@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #RESULTS LIST
+\*------------------------------------*/
+
+/**
+ * 1) 
+ */
+ .c-results-list {
+     padding-top: 100px;
+    background-color: #f7f7f7;
+    max-width: 800px;
+    margin: auto;
+}
+
+.list {
+    background-color: #fff;
+}
+
+.filter select {
+    margin-bottom: 100px;
+    appearance: none;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 0;
+    outline: 1px solid darkgray;
+    height: 50px;
+}
